@@ -1,0 +1,62 @@
+Install Windows update on Raspberry PI
+
+Step 1] Connect the SD-Card to the System (which you are going to use in your Raspberry pi)
+
+Step 2] Go to this link https://github.com/WOA-Project/WOA-Deployer-Rpi
+
+Scroll down and click on Releases :
+Download the WOA developer.ZIP
+
+Step 3] Go to this link https://uup.rg-adguard.net/
+
+Fill out the necessary details to download the Windows file
+
+Step 4] Create a new folder in the Downloads Folder where you have downloaded both the files
+
+Step 5] Put the windows ISO file in that folder and then double click on the file. 
+It will download all the necessary files 
+Right click on the Disc image File (Marked in Red) and click on “Mount”
+
+Step 6] Extract the WOA zip file and open the folder, scroll down to the bottom and find the WOA Deployer .exe file
+
+Right click on it and select “Run as Administration” & Choose the SD Card that you have connected to your system
+
+Then click on browse and select the “install.wim” file in the Disc which we mounted
+
+Click on DEPLOY And then click on OK
+
+Step 7] After Downloading the Files Remove the SD card from the system and enter it into the New     Raspberry Pi module and then “Boot it” (Turn it on).
+
+
+After turning it on a terminal will be displayed 
+Type “exit” and then Enter
+
+
+After that Select Device Manager and Press Enter :
+
+Scroll down to Raspberry pi configuration and Press Enter
+
+Scroll down to Chipset Configuration and press Enter 
+
+Then Change the CPU Clock to MAX then Press Esc continuously until you get back at the manager window
+
+Select Boot Maintenance Manager 
+
+Then Boot options go to -> Change Boot order
+
+Press enter again and select “SD/MMC on Broadcom SDHOST” 
+Then press the “ +” key and Press enter
+
+Again press Esc until the Manager window
+
+Now Select the Boot manager and press enter
+
+Press enter on “SD/MMC on Broadcom SDHOST
+
+Press Enter Again It will start to boot up windows 10
+
+You have to create a user and follow other steps like connecting to a network to your raspberry pi and then Keep the Location and other access OFF, so as to prevent background running applications. After Some time your Windows will boot up on the Raspberry PI
+
+
+
+
